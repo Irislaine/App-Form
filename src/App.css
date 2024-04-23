@@ -1,0 +1,103 @@
+/*----------Reset---------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: #052338;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform .5s;
+}
+
+/*---------App--------*/
+
+.app_header {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app_btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #034f84;
+  color: white;
+}
+
+.app_err{
+  display: flex;
+  padding: 100px;
+  flex-direction: column;
+  background-color: #034f84;
+  max-width: 250vh;
+  gap: 20px;
+  height: 100vmax;
+}
+
+.app_info_err {
+  font-size: xx-large;
+  top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.app_btn_err{
+  font-size: larger;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #052338;
+  color: white;
+  gap: 8px;
+}
+
+.app_container {
+  justify-content: space-evenly;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
